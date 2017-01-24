@@ -1,0 +1,32 @@
+{"_comment": "Validate the json doc before executing it."}
+
+{
+  "_links": {
+    "owner": {
+      "href": "https://nibiru-integration.prsn.us/api/teams/70"
+    },
+    "network": {
+      "href": "https://nibiru-integration.prsn.us/api/networks/aws-dev-us-east-1b-priv"
+    }
+  },
+  "tags": {
+    "nibiru_scheduler_enabled": "true",
+    "nibiru_scheduler_start_time": "14:00",
+    "nibiru_scheduler_stop_time": "01:00",
+    "for": "testing",
+    "app": "redis",
+    "by": "susa"
+  },
+  "app_name": "RedisCL",
+  "app_type": "redb",
+  "storage_type": "remote",
+  "storage_options": {
+    "size": 25
+  },
+  "aws": {
+    "size": "t2.small",
+    "ebs_options": {
+      "volume_type": "gp2"
+    }
+  }
+}
